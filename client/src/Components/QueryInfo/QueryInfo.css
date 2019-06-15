@@ -1,0 +1,11 @@
+.query-info {
+    background-color: #00b2d6;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: left;
+  
+  }
+  
+  .query-info .direction-info {
+    font-size: 37px;
+  }
