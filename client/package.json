@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3007 ",
+  "proxy": "http://localhost:3060",
   "dependencies": {
     "axios": "^0.19.0",
     "react": "^16.8.6",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "moment": "^2.24.0",
-    "react-icons": "^3.7.0"
+    "react-icons": "^3.7.0",
+    "react-spinners": "^0.5.4"
   }
 }

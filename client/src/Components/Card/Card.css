@@ -1,84 +1,86 @@
 .leg-col {
-    padding: 0;
-  }
-  
-  .leg-table {
-    width:100%;
-    margin-bottom: 12px;
-  }
-  
-  .leg-col-last {
-    text-align: right;
-    padding-right: 10px;
-  }
-  
-  .leg-place-code {
-    color: #837e91;
-  }
-  
-  .leg-arrow {
-    color: #837e91;
-    padding: 0;
-    vertical-align: middle;
-  }
-  
-  .leg-duration {
-    color: #837e91;
-  }
-  
-  .leg-last-col {
-    font-size: 0.8em;
-    text-align: right;
-  }
-  
-  .leg-direct {
-    color: #06d879;
-  }
-  
-  .leg-indirect {
-    color: #ea6515;
-  }
-  
-  .leg-airline-logo {
-    height: 24px;
-    width: 24px;
-    border-radius: 4px;
-  }
-  
-  .leg-logo-td {
-    text-align: left;
-    vertical-align: top;
-  }
+  padding: 0;
+}
 
-  .bkp-itinerary {
-    margin-top: 10px;
-  }
-  
-  .it-card-body {
-    padding: 10px;
-  }
-  
-  .it-select-btn {
-    color: white;
-    background-image: linear-gradient(to bottom, #00d675, #00bf69);
-    border-radius: 10%;
-  }
-  
-  .it-price-col {
-    /* left: 200px;  
-    bottom: 55px; */
-    text-align: left;
-    padding-left: 0;
-    font-size: 1.5em;
-  }
-  
-  .it-select-col {
-    text-align: right;
-    padding-right: 0;
-  }
-  
-  .it-returnprice-col {
-    font-size: 1.5em;
-    right: 125px;
-  }
+.leg-table {
+  width: 100%;
+  margin-bottom: 12px;
+}
 
+.leg-col-last {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.leg-place-code {
+  color: #837e91;
+}
+
+.leg-arrow {
+  color: #837e91;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.leg-duration {
+  color: #837e91;
+}
+
+.leg-last-col {
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.leg-direct {
+  color: #06d879;
+}
+
+.leg-indirect {
+  color: #ea6515;
+}
+
+.leg-airline-logo {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.leg-logo-td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.bkp-itinerary {
+  margin-top: 10px;
+}
+
+.it-card-body {
+  padding: 10px;
+  max-height: 200px;
+}
+
+.it-select-btn {
+  color: white;
+  background-image: linear-gradient(to bottom, #00d675, #00bf69);
+  border-radius: 10%;
+  width: 100px;
+}
+
+.it-price-col {
+  text-align: left;
+  padding-left: 0;
+  font-size: 1.5em;
+  left: 35px;
+}
+
+.it-select-col {
+  text-align: right;
+  padding-right: 0;
+  right: 30px;
+  bottom: 20px;
+}
+
+.it-returnprice-col {
+  font-size: 1.5em;
+  right: 125px;
+}

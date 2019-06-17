@@ -8,9 +8,7 @@ const QueryInfo = () => (
       <span>&nbsp;&#10140;&nbsp;</span>
       LN
     </div>
-    <div className="travellers-info">
-      2 travellers, Econom
-    </div>
+    <div className="travellers-info">2 travellers, Econom</div>
   </div>
 )
 

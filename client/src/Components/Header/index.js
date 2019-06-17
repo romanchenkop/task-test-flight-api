@@ -8,7 +8,7 @@ const Header = () => (
       <img className="header-logo-image" alt="Skyscanner" src={logo} />
     </a>
     <button className="navbar-toggler ml-auto bkp-toggler" type="button">
-      <span className="navbar-toggler-icon"></span>
+      <span className="navbar-toggler-icon" />
     </button>
   </header>
 )

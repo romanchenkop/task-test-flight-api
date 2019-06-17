@@ -1,5 +1,12 @@
 .bkp-itineraries {
-    background-color: #f2f1f4;
-    padding: 1px 10px 10px 10px;
-  }
+  background-color: #f2f1f4;
+  padding: 1px 10px 10px 10px;
+}
 
+.load-spinner-wrapper {
+  text-align: center;
+}
+
+.load-spinner {
+  display: inline-block;
+}

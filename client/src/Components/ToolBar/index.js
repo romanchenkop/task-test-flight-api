@@ -4,8 +4,12 @@ import './ToolBar.css'
 
 const ToolBar = () => (
   <div className="text-left bkp-toolbar">
-    <button type="button" className="btn btn-link">Filter</button>
-    <button type="button" className="btn btn-link">Sort</button>
+    <button type="button" className="btn btn-link">
+      Filter
+    </button>
+    <button type="button" className="btn btn-link">
+      Sort
+    </button>
     <button type="button" className="btn btn-link float-right">
       <FaBell />
       &nbsp;
@@ -14,4 +18,4 @@ const ToolBar = () => (
   </div>
 )
 
-export default ToolBar;
+export default ToolBar
