@@ -28,11 +28,6 @@ const getReturnFlight = () => {
     }
 }
 
-// const getATime = (obj) => {
-//     const formatedFlyDuration = moment(obj.fly_duration, 'H:mm').format("H:mm")
-//     const prepareArrivalTime = moment.duration(obj.dTime).add(formatedFlyDuration)
-//     return moment(prepareArrivalTime.asMilliseconds()).format("h:mm")
-// }
 const mapFlight = (request) => {
     request().then(response => {
         const returnFlightToFront = response.data.data

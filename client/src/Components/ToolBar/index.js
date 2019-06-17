@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaBell } from 'react-icons/fa';
-import './ToolBar.css';
+import React from 'react'
+import { FaBell } from 'react-icons/fa'
+import './ToolBar.css'
 
 const ToolBar = () => (
   <div className="text-left bkp-toolbar">

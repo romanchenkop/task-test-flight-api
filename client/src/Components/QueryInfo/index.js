@@ -1,5 +1,5 @@
-import React from 'react';
-import './QueryInfo.css';
+import React from 'react'
+import './QueryInfo.css'
 
 const QueryInfo = () => (
   <div className="query-info">
@@ -14,4 +14,4 @@ const QueryInfo = () => (
   </div>
 )
 
-export default QueryInfo;
+export default QueryInfo
