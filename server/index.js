@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5054
+const port = 3007
 const axios = require('axios')
 const moment = require('moment')
 
@@ -33,6 +33,24 @@ const getReturnFlight = () => {
 //     const prepareArrivalTime = moment.duration(obj.dTime).add(formatedFlyDuration)
 //     return moment(prepareArrivalTime.asMilliseconds()).format("h:mm")
 // }
+const mapFlight = (request) => {
+    request().then(response => {
+        const returnFlightToFront = response.data.data
+            .filter(obj => !obj.has_airport_change)
+            .map((obj) => ({
+                countryFrom : obj.countryFrom.name,
+                countryTo : obj.countryTo.name,
+                price : obj.price,
+                departureTime : moment(obj.dTime * 1000).format('H:mm'),
+                arriveTime : moment(obj.aTime * 1000).format('H:mm'),
+                travelTime : obj.fly_duration,
+                cityFrom : obj.cityFrom,
+                cityTo : obj.cityTo,
+                }  
+            ));
+        return returnFlightToFront;
+        })
+}
 
 const mapDirectFlight = () => getFlight()
     .then(response => {
@@ -74,8 +92,8 @@ const mapReturnFlight = () => getReturnFlight()
 
 app.get("/flightEDtoLN", async (req, res) => {
     try {
-        const returnFlight = await mapReturnFlight()
-        const directFlight = await mapDirectFlight()
+        const returnFlight = await mapDirectFlight()
+        const directFlight = await mapReturnFlight()
         const data = {
             directFlight,
             returnFlight

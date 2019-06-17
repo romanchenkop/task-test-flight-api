@@ -1,6 +1,5 @@
 import React from 'react'
 import './Card.css'
-import moment from 'moment'
 
 const Card = ({
     dTime,
@@ -31,16 +30,16 @@ const Card = ({
           <td className="leg-logo-td" rowSpan={2}>
             <img className="leg-airline-logo" src="https://logos.skyscnr.com/images/airlines/favicon/EZ.png" alt="E" />
           </td>
-          <td>{returnDTime}</td>
+          <td>{dTime}</td>
           <td className="leg-arrow" rowSpan={2}>&nbsp;&#10140;&nbsp;</td>
-          <td>{returnATime}</td>
+          <td>{aTime}</td>
           <td className="leg-last-col leg-duration">
             {travelDuration}
           </td>
         </tr>
         <tr>
           <td className="leg-place-code">{cityFrom}</td>
-          <td className="leg-place-code">{cityTo}</td>
+          <td className="leg-place-code">{cityTo}</td>  
           <td className="leg-last-col leg-direct">Direct</td> 
         </tr>
       </tbody>

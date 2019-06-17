@@ -32,7 +32,7 @@ const CardList = () => {
                         returnDTime={item.returnFlight.departureTime}
                         returnATime={item.returnFlight.arriveTime}
                         returnTravelDuration={item.returnFlight.travelTime}
-                        returCityFrom={item.returnFlight.cityFrom} 
+                        returnCityFrom={item.returnFlight.cityFrom} 
                         returnCityTo={item.returnFlight.cityTo} 
                         returnPrice={item.returnFlight.price}
                         travelDuration={item.flight.travelTime}
